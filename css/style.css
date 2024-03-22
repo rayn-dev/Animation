@@ -1,0 +1,141 @@
+/* body {
+   background: #000;
+} */
+
+/*.box {
+   width: 200px;
+   height: 200px;
+   background: white;
+   border-radius: 50%;
+   position: relative;
+   
+   animation-name: box-anim;
+   animation-duration: 6s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-delay: 5s;
+} */
+
+/* @keyframes box-anim {
+    0%{
+        left: 0;
+    }
+    20%{
+        background: yellow;
+    }
+    40%{
+        background: green;
+    }
+    60%{
+        background: red;
+        border: 3px solid white;
+        border-radius: 0;
+    }
+    80%{
+        background: hotpink;
+    }
+    100%{
+        left: 500px;
+        background: rgb(23, 5, 190) ;
+    }
+} */
+
+.box {
+    width: 180px;
+    height: 420px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 12px;
+    animation: box-anim 5s ease-in-out;
+}
+
+@keyframes box-anim {
+    0%{
+        transform: translateY(-500px);
+    }
+    50%{
+        transform: translateX(-650px);
+    }
+}
+
+.red {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: black;
+    animation: red-anim 5s linear;
+}
+
+@keyframes red-anim {
+    0%{
+        background: black;
+    }
+    1%{
+        background: red;
+    }
+    100%{
+        background: red;
+    }
+}
+
+.yellow {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: black;
+    animation: yellow-anim 5s linear 5s;
+}
+
+@keyframes yellow-anim {
+    0%{
+        background: black;
+    }
+    1%{
+        background: yellow;
+    }
+    60%{
+        background: yellow;
+    }
+    70%{
+        background: black;
+    }
+    80%{
+        background: yellow;
+    }
+    90%{
+        background: black;
+    }
+    100%{
+        background: yellow;
+    }
+}
+
+.green {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background:black;
+    animation: green-anim 5s linear 10s;
+}
+
+@keyframes green-anim {
+    0%{
+        background: black;
+    }
+    1%{
+        background:green;
+    }
+    100%{
+        background: green;
+    }
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+}
